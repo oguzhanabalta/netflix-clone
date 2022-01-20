@@ -1,26 +1,33 @@
 [
     {
       "id": 1,
-      "title": "Enjoy on your TV.",
-      "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+      "title": "Televizyonunuzda izleyebilirsiniz.",
+      "subTitle": "Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında seyredin.",
       "image": "/images/misc/home-tv.jpg",
       "alt": "Tiger King on Netflix",
       "direction": "row"
     },
     {
       "id": 2,
-      "title": "Download your programmes to watch on the go.",
-      "subTitle": "Save your data and watch all your favourites offline.",
+      "title": "Çevrimdışı izlemek için içerikleri indirin.",
+      "subTitle": "En sevdiğiniz içerikleri kolayca kaydedin ve her zaman izleyecek bir şeyleriniz olsun.",
       "image": "/images/misc/home-mobile.jpg",
       "alt": "Watch on mobile",
       "direction": "row-reverse"
     },
     {
       "id": 3,
-      "title": "Watch everywhere.",
-      "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
+      "title": "İstediğiniz her yerde izleyin.",
+      "subTitle": "Ekstra ücret ödemeden telefonda, tablette, bilgisayarda, televizyonda sınırsız film ve dizi izleyin.",
       "image": "/images/misc/home-imac.jpg",
       "alt": "Money Heist on Netflix",
       "direction": "row"
+    },{
+      "id": 4,
+      "title": "Çocuklarınız için profiller oluşturun.",
+      "subTitle": "Üyeliğinize dâhil olan bu ücretsiz deneyim sayesinde çocuklarınız, sadece onlara özel bir alanda en sevdikleri karakterlerle maceralara atılabilir.",
+      "image": "/images/misc/kids-profile.png",
+      "alt": "Make a profile for kids ",
+      "direction": "row-reverse"
     }
   ]
