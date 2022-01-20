@@ -3,9 +3,9 @@ import { Container, Inner, Item, Pane, Title, SubTitle, Image } from './styles/j
 
 export default function Jumbotron({ children, direction = 'row', ...restProps }) {
     return (
-        <Item direction={direction}>
-            <Inner>
-                {children} 
+        <Item >
+            <Inner direction={direction}>
+                {children}
             </Inner>
         </Item>
     )
@@ -27,6 +27,6 @@ Jumbotron.SubTitle = function JumbotronSubitle({ children, ...restProps }) {
     return <SubTitle {...restProps}> {children} </SubTitle>;
 }
 
-Jumbotron.Image = function JumbotronImage({  ...restProps }) {
-    return <Image {...restProps}/>;
+Jumbotron.Image = function JumbotronImage({ ...restProps }) {
+    return <Image {...restProps} />;
 }

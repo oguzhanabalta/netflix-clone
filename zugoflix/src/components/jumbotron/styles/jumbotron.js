@@ -62,4 +62,9 @@ export const Image = styled.img`
 `;
 
 export const Container = styled.div`
+    @media (max-width: 1000px){
+        ${Item}:last-of-type h2 {
+            margin-bottom: 50px;
+        }
+    }
 `;
