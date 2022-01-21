@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "../components/accordion";
+import OptForm from "../components/opt-form";
 import faqsData from '../fixtures/faqs.json';
 
 export function FaqsContainer(){
@@ -12,6 +13,13 @@ export function FaqsContainer(){
                     <Accordion.Body>{item.body}</Accordion.Body>
                 </Accordion.Item>
             ))}
+            <OptForm>
+                <OptForm.Text>İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinize erişmek için e‑posta adresinizi girin.</OptForm.Text>
+                <OptForm.Input placeholder="E-posta adresi"/>
+                <OptForm.Button>Başlayın</OptForm.Button>
+                
+            </OptForm>
+
         </Accordion>
 
     )
