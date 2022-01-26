@@ -7,12 +7,20 @@ export function App() {
 
   return (
     <Router>
-      <Routes>
-      <Route path="/browse" element={<Browse />}/>
-      <Route path="/signin" element={<SignIn />}/>
-      <Route path="/signup" element={<SignUp />}/>
-      <Route path={ROUTES.HOME} element={<Home />}/>
-      </Routes>
+      
+      <Route exact path="/browse" >
+        <Browse/>
+      </Route>
+      <Route exact path="/signin" >
+        <SignIn/>
+      </Route>
+      <Route exact path="/signup" >
+        <SignUp/>
+      </Route>
+      <Route exact path={ROUTES.HOME} >
+        <Home/>
+      </Route>
+      
     </Router>
   );
 }
