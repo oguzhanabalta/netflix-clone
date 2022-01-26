@@ -60,10 +60,10 @@ export default function SignUp() {
                             onChange={({ target }) => setEmailAddress(target.value)}
                         />
                         <Form.Input
-                            type="Şifre"
+                            type="password"
                             value={password}
                             autoComplete="off"
-                            placeholder="Password"
+                            placeholder="Şifre"
                             onChange={({ target }) => setPassword(target.value)}
                         />
                         <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-up">
