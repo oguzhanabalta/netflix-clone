@@ -56,7 +56,7 @@ Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps 
       <SearchInput
         value={searchTerm}
         onChange={({ target }) => setSearchTerm(target.value)}
-        placeholder="Search films and series"
+        placeholder="Film veya dizi ara"
         active={searchActive}
         data-testid="search-input"
       />

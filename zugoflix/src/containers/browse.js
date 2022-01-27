@@ -6,7 +6,9 @@ import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg'
 
 export default function BrowseContainer({ slides }) {
-
+    
+    const [category, setCategory] = useState('series');
+    const [searchTerm, setSearchTerm] = useState('');
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
     const { firebase } = useContext(FirebaseContext);
@@ -29,14 +31,17 @@ export default function BrowseContainer({ slides }) {
                         <Header.Group>
                             <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
                             <Header.TextLink >
-                                Series
+                                Diziler
                             </Header.TextLink>
                             <Header.TextLink >
-                                Films
+                                Filmler
                             </Header.TextLink>
                         </Header.Group>
                         <Header.Group>
-                            
+                            <Header.Search
+                                searchTerm={searchTerm}
+                                setSearchTerm={setSearchTerm}
+                            />
                             <Header.Profile>
                                 <Header.Picture src={user.photoURL} />
                                 <Header.Dropdown>
@@ -45,7 +50,7 @@ export default function BrowseContainer({ slides }) {
                                         <Header.TextLink>{user.displayName}</Header.TextLink>
                                     </Header.Group>
                                     <Header.Group>
-                                        <Header.TextLink onClick={() => firebase.auth().signOut()}>Sign out</Header.TextLink>
+                                        <Header.TextLink onClick={() => firebase.auth().signOut()}>Oturumu kapat</Header.TextLink>
                                     </Header.Group>
                                 </Header.Dropdown>
                             </Header.Profile>
@@ -53,13 +58,11 @@ export default function BrowseContainer({ slides }) {
                     </Header.Frame>
 
                     <Header.Feature>
-                        <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
+                        <Header.FeatureCallOut>Joker'i Şimdi İzle</Header.FeatureCallOut>
                         <Header.Text>
-                            Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham
-                            City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a
-                            futile attempt to feel like he's part of the world around him.
+                        Kalabalığın içinde sonsuza kadar yalnız kalan başarısız komedyen Arthur Fleck, Gotham City sokaklarında yürürken bağlantı arar. Arthur iki maske takıyor - bir palyaço olarak günlük işi için boyadığı maske ve etrafındaki dünyanın bir parçası gibi hissetmek için beyhude bir çabayla yansıttığı kılık.
                         </Header.Text>
-                        <Header.PlayButton>Play</Header.PlayButton>
+                        <Header.PlayButton>Oynat</Header.PlayButton>
                     </Header.Feature>
                 </Header>
 
